@@ -11,21 +11,3 @@ flowchart TD
     C --> F[Input is the right number]
     F --> G(Game Ends)
 ```
-mermaid ```  
-sequenceDiagram
-    actor Attacker
-    participant BotNet
-    participant WebServer
-    participant Firewall
-    Attacker ->> BotNet: Herds a group of devices afflicted by malware 
-    BotNet ->> WebServer: Floods the bandwidth of the server, causing service to be denied to actual participants
-    Firewall ->> BotNet: Attempts to keep unauthorized traffic out of the WebServer
-``` 
-mermaid ```
-erDiagram
-    PRODUCT ||--o{INVENTORY:   ifAvailableIn}  
-    CUSTOMER ||--o{SALE: makesA}
-    SALE ||--o{PRODUCT: contains}
-    INVENTORY ||--o{DELIVERS: yes}
-    INVENTORY ||--o{REFUND: no}
-```
